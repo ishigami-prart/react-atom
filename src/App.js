@@ -1,6 +1,7 @@
 import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/atoms/molecules/Searchinput";
+import { UserCard } from "./components/organisms/UserCard";
 import "./styles.css";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <SecondaryButton>テスト2</SecondaryButton>
       <br />
       <SearchInput />
+      <UserCard />
     </div>
   );
 }
