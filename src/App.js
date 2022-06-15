@@ -2,6 +2,7 @@ import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { SearchInput } from "./components/atoms/molecules/Searchinput";
 import { UserCard } from "./components/organisms/UserCard";
+import { HeaderOnly } from "./components/templetes/HeaderOnly";
 import "./styles.css";
 
 const user = {
@@ -17,7 +18,7 @@ const user = {
 
 export default function App() {
   return (
-    <div className="App">
+    <HeaderOnly>
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
       <PrimaryButton>テスト</PrimaryButton>
@@ -25,6 +26,6 @@ export default function App() {
       <br />
       <SearchInput />
       <UserCard user={user} />
-    </div>
+    </HeaderOnly>
   );
 }

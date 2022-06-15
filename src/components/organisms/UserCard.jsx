@@ -24,11 +24,13 @@ export const UserCard = (props) => {
 const SDl = styled.dl`
   text-align: left;
   margin-bottom: 0px;
+
   dt {
     float: left;
   }
   dd {
     padding-left: 32px;
     margin-bottom: 8px;
+    overflow-wrap: break-word;
   }
 `;
