@@ -4,7 +4,7 @@ export const Top = () => {
   return (
     <SContainer>
       <h2>TOPページです。</h2>
-    </Scontainer>
+    </SContainer>
   );
 };
 

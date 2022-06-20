@@ -4,7 +4,7 @@ export const Users = () => {
   return (
     <SContainer>
       <h2>User一覧</h2>
-    </Scontainer>
+    </SContainer>
   );
 };
 
