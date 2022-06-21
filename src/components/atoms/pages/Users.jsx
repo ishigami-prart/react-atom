@@ -33,7 +33,7 @@ const user = {
 };
 export const Users = () => {
   const { userInfo, setUserInfo } = useContext(UserContext);
-  const onClickSwitch = () => setUserInfo({});
+  const onClickSwitch = () => setUserInfo({ isAdmin: !userInfo.isAdmin });
   return (
     <SContainer>
       <h2>User一覧</h2>
