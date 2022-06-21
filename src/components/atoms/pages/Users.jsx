@@ -4,8 +4,10 @@ import { SearchInput } from "../molecules/Searchinput";
 import { UserCard } from "../../organisms/UserCard";
 import { useLocation } from "react-router-dom";
 import { SecondaryButton } from "../button/SecondaryButton";
+import { useRecoilState } from "recoil";
 
 import { UserContext } from "../../../providers/UserProvider";
+import { userState } from "../../../store/userState";
 
 const users = [...Array(10).keys()].map((val) => {
   return {
@@ -32,7 +34,8 @@ const user = {
   website: "http://aaaa.jp"
 };
 export const Users = () => {
-  const { userInfo, setUserInfo } = useContext(UserContext);
+  //const { userInfo, setUserInfo } = useContext(UserContext);
+  const [userInfo, setUserInfo] = useRecoilState(userState);
   const onClickSwitch = () => setUserInfo({ isAdmin: !userInfo.isAdmin });
   return (
     <SContainer>
