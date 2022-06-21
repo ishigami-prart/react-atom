@@ -1,5 +1,5 @@
 import "./styles.css";
-import { Router } from "./router/Router";
+import { RouterComponent } from "./router/Router";
 
 const user = {
   name: "じゃけえ",
@@ -13,10 +13,5 @@ const user = {
 };
 
 export default function App() {
-  return (
-    <>
-      <div>aaaaaaaa</div>
-      <Router />
-    </>
-  );
+  return <RouterComponent />;
 }

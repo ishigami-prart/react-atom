@@ -1,16 +1,22 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Top } from "../components/atoms/pages/Top";
-import { Users } from "../components/atoms/pages/Users";
+import { Users } from "../components/pages/Users";
+import { DefaultLayout } from "../components/templetes/DefaultLayout";
+import { HeaderOnly } from "../components/templetes/HeaderOnly";
 
-export const Router = () => {
+export const RouterComponent = () => {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Top />
+          <DefaultLayout>
+            <Top />
+          </DefaultLayout>
         </Route>
         <Route exact path="/users">
-          <Users />
+          <DefaultLayout>
+            <Users />
+          </DefaultLayout>
         </Route>
       </Switch>
     </BrowserRouter>
