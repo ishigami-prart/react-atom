@@ -14,9 +14,9 @@ export const RouterComponent = () => {
           </DefaultLayout>
         </Route>
         <Route exact path="/users">
-          <DefaultLayout>
+          <HeaderOnly>
             <Users />
-          </DefaultLayout>
+          </HeaderOnly>
         </Route>
       </Switch>
     </BrowserRouter>
